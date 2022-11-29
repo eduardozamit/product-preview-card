@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+    background-color: hsl(30, 38%, 92%);
+}
+
+.text {
+    width: 250px;
+    height: 375px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 13px 13px 0 ;
+    padding: 28px;
+}
+
+.image {
+    width: 250px;
+    height: 375px;
+}
+
+#desktop-img {
+    width: 100%;
+    border-radius: 13px 0 0 13px ;
+}
+
+#mobile-img {
+    width: 100%;
+    display: none;
+    border-radius: 13px 13px 0 0 ;
+}
+
+.product-type {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.title {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    font-family: 'Fraunces', serif;
+    line-height: 28px;
+    color: hsl(212, 21%, 14%);
+}
+
+.product-description {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    color: hsl(228, 12%, 48%);
+}
+
+.prices {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descont-price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 1.7rem;
+}
+
+.normal-price {
+    color: hsl(228, 12%, 48%);
+    margin-right: 20px;
+}
+
+.btn {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn:hover {
+    background-color: hsl(158, 36%, 27%);
+    transition: 0.4s;
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+    }
+    .text {
+        border-radius: 0 0 13px 13px;
+    }
+
+    #desktop-img {
+        display: none;
+    }
+
+    #mobile-img {
+        display: flex;
+    }
+
+    .text {
+        width: 340px;
+        height: 375px;
+    }
+    
+    .image {
+        width: 340px;
+        height: 234px;
+    }
+}
